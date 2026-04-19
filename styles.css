@@ -740,9 +740,8 @@ ul { list-style: none; }
 .pricing__intro {
   text-align: center;
   font-size: 1.0625rem;
-  color: var(--gray-500);
-  margin-top: -48px;
-  margin-bottom: 48px;
+  color: var(--green-500);
+  font-weight: 600;
 }
 
 .pricing-card__limits {
@@ -855,7 +854,38 @@ ul { list-style: none; }
   line-height: 1.5;
 }
 
-/* ===== MODULES ===== */
+/* ===== MODULES (collapsible) ===== */
+.modules__detail {
+  border: none;
+}
+.modules__summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  cursor: pointer;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+.modules__summary::-webkit-details-marker { display: none; }
+.modules__toggle-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--purple-50);
+  color: var(--purple-500);
+  font-size: 1.25rem;
+  font-weight: 600;
+  flex-shrink: 0;
+  transition: all .2s;
+}
+.modules__detail[open] .modules__toggle-icon {
+  transform: rotate(45deg);
+}
 .modules__grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
