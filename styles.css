@@ -715,9 +715,34 @@ ul { list-style: none; }
   color: var(--gray-900);
   margin-bottom: 8px;
 }
+.pricing-card__price {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--purple-500);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.pricing-card__currency {
+  font-size: 1.5rem;
+  vertical-align: super;
+  font-weight: 700;
+}
+.pricing-card__period {
+  font-size: .875rem;
+  font-weight: 500;
+  color: var(--gray-500);
+}
 .pricing-card__desc {
   font-size: .875rem;
   color: var(--gray-500);
+}
+
+.pricing__intro {
+  text-align: center;
+  font-size: 1.0625rem;
+  color: var(--gray-500);
+  margin-top: -48px;
+  margin-bottom: 48px;
 }
 
 .pricing-card__limits {
